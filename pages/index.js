@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React from 'react'
+import React, {useEffect }from 'react'
 import styles from '../styles/main.module.scss'
 import { Navbar } from "../components/Navbar"
 import { Footer } from "../components/Footer"
@@ -8,9 +8,12 @@ import { Products } from "../components/Products"
 import { productData } from "../components/Products/data";
 import { About } from "../components/About";
 
-
-
 export default function Home() {
+
+  useEffect(() => {
+    document.getElementById("font-awesome").setAttribute("media","all");
+  }, [])
+
   return (
     <>
       <Head>
@@ -83,9 +86,7 @@ export default function Home() {
 
         </div>
       </div>
-      
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
-
+      <link rel="stylesheet" id="font-awesome" media="print" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
       {/*
       Footer simply display your social medias. Add a social media by adding an object with a name, url and icon (Provide the class of the icon from Font-Awesome).
       Ex:
