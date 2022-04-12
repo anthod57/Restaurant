@@ -24,9 +24,8 @@ export const Navbar = (props) => {
                 <i className="fa-solid fa-bars"></i>
             </div>
             <div className={styles.menu} ref={Menu} style={{right: "-60%"}}>
-                <i class="fa-solid fa-xmark" onClick={showMenu}></i>
+                <i className="fa-solid fa-xmark" onClick={showMenu}></i>
                 <ul>
-                    {console.log(props)}
                     {props.menu?.map((item, index) => {
                         return(
                             <Link key={index} href={item.link}><a><li onClick={showMenu}>{item.text}</li></a></Link>
