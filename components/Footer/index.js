@@ -8,7 +8,7 @@ export const Footer = (props) => {
                 {props?.links?.map((link, index) => {
                     return (
                         <a name={link.name} key={index} href={link.url} className={styles.socialmedia} target="_blank" rel="noreferrer">
-                            <i class={link.icon}></i>
+                            <i className={link.icon}></i>
                         </a>
                     )
                 })}
