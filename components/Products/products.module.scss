@@ -1,0 +1,77 @@
+//All devices
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card {
+    width: 300px;
+    height: 100%;
+    margin: 1rem;
+    background-color: black;
+    color: black;
+    transition: all 0.5s;
+    padding-bottom: 1em;
+    overflow: hidden;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    h3 {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        color: white;
+    }
+
+    .infos {
+        padding-left: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+    }
+
+    .picture {
+        height: 300px;
+        width: 300px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    .description {
+        text-align: left;
+        color: white;
+        padding: 0 0.25em;
+
+        p {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+    }
+
+    .price {
+        background-color: #fca311;
+        font-weight: bold;
+        height: 60px;
+        width: 60px;
+
+        span {
+            line-height: 60px;
+            color: white;
+        }
+    }
+}
+
+//Desktop
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 1100px;
+    }
+}
