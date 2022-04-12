@@ -52,7 +52,7 @@ export default function Home() {
 
           <div className={styles.section} id={"Home"}>
             <h1>LES MEILLEURS BURGERS DE PARIS</h1>
-            <a href="tel:+33123456789"></a><button>COMMANDER</button> {/* This button is a click to call, only displayed on mobile device. */}
+            <a href="tel:+33123456789"><button>COMMANDER</button></a> {/* This button is a click to call, only displayed on mobile device. */}
 
             {/* 
             Tel and address can be changed here, it will also update the Google Maps link to point to the address. They are both required.
