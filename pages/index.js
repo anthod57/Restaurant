@@ -44,6 +44,10 @@ export default function Home() {
         {
           text: "À propos",
           link: "#About"
+        },
+        {
+          text: "GITHUB",
+          link: "https://github.com/anthod57/Restaurant"
         }
       ]}></Navbar>
 
