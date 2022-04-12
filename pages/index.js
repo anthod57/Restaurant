@@ -19,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <div className={styles.bg}/>
 
       {/*
       You can add a link in the navbar by providing an object with a text and a link.
